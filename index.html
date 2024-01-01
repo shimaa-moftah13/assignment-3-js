@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/5f2f828feb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cousine:wght@400;700&family=Josefin+Sans:ital,wght@0,300;0,400;1,300&family=Jost:wght@200;300;400&family=Pacifico&display=swap" rel="stylesheet">
+    <title>Bookmark</title>
+  </head>
+
+  <body>
+        
+      
+    <div id="home">
+        <div class="layer">
+            <div class="content text-center justify-content-center">
+                <h1>Bookmarker</h1>
+                <div class="text-center">
+
+
+
+                  ..........................................................................................................................................................................................................................................................................................................................................................
+              </div>
+
+                <h2><i class="fa-regular fa-bookmark"></i> Bookmark your favorite book</h2>
+            </div>
+            
+            <div class="form w-75 mx-auto bg-transparent rounded py-2">
+
+                 <div>
+                    <label for="bookName" class="py-1"><i class="fa-solid fa-book"></i>      Book Name</label>
+                    <input class="form-control bg-transparent" id="bookName" type="text">
+                    <div id="warningName" class="form-text"></div>
+                 </div>
+
+                 <div class="py-4">
+                     <label for="bookUrl" class="py-1"><i class="fa-solid fa-link"></i>      Book URL</label>
+                    <input class="form-control bg-transparent" id="bookUrl" type="url" >
+                    <div id="warningpass"></div>
+                 </div>
+                 
+                <div class="w-50  mx-auto">
+                   <button onclick="addBook()" class="btn  w-100 mt-3" id="addBtn">Add</button>
+                  <button onclick="update()" class="btn  w-100 mt-3 d-none" id="updateBtn">Update</button>
+               </div>
+                
+            </div>
+
+            
+    
+            <div class=" w-75 mx-auto ">
+                
+               <input id="searchInput" oninput=" search() " type="search" class="form-control my-3 " placeholder="Search by book name...">
+               <table class="table py-3 text-center ">
+                <thead>
+                  <tr>
+                   <th>Id</th>
+                   <th>Book Name</th>
+                   <th>Book URL</th>
+                   <th>Action</th>
+                  </tr>
+                </thead>
+
+               <tbody id="tableBody" >
+            
+               </tbody>
+              </table>
+            </div>
+
+
+            
+                      
+                   
+                            
+            
+            
+            
+                    </div>
+        </div>
+    </div>
+
+
+
+    
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/index.js"></script>
+  </body>
